@@ -9,9 +9,8 @@ const MONGO_URI = 'mongodb://localhost/mongoose-query-logger';
 beforeAll(async () => {
   if (!mongoose.connection.readyState) {
     await mongoose.connect(MONGO_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      useCreateIndex: true,
+      autoIndex: true,
+      autoCreate: true,
     });
   }
 });
