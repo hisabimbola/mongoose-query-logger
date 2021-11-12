@@ -58,7 +58,7 @@
     "wait-for-expect": "^3.0.2"
   },
   "peerDependencies": {
-    "@types/mongoose": "^6.0.0",
+    "@types/mongoose": "^5.11.97",
     "mongoose": "^6.0"
   },
   "keywords": [
