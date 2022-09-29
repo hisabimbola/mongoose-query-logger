@@ -44,6 +44,7 @@ export const TARGET_METHODS = [
   // 'remove', # note https://mongoosejs.com/docs/middleware.html#aggregate
   // insertMany,
   'aggregate',
+  'distinct',
 ];
 export type TargetMethod = ValuesOf<typeof TARGET_METHODS>;
 
@@ -59,6 +60,7 @@ export const QUERY_MIDDLEWARE = [
   'updateMany',
   'deleteOne',
   'deleteMany',
+  'distinct',
 ];
 export type QueryMiddleware = ValuesOf<typeof QUERY_MIDDLEWARE>;
 
